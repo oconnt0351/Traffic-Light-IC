@@ -9,12 +9,16 @@ You can also include images in this folder and reference them in the markdown. E
 
 ## How it works
 
-Explain how your project works
+Switch 1 (IN0): Power switch
+Switch 2 (IN1): Light changing sequence start switch
+Switch 2 high: Red to green to yellow to red (loops with timed delay)
 
 ## How to test
 
-Explain how to use your project
+LED1 (red) should be on indefinitely if IN0 (power switch) is high and IN1 (sequence switch) is low. If the sequence switch is on, the lights
+loop from red to green to yellow to red and so forth. If the switch is turned off during the sequence, the sequence will finish before stopping
+at red. If the power switch is off, none of the LEDs should be on.
 
 ## External hardware
 
-List external hardware used in your project (e.g. PMOD, LED display, etc), if any
+Two switches provide inputs and three LEDs (red, yellow, green) are outputs.
